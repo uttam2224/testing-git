@@ -36,4 +36,4 @@ install argocd cli and login
 agrocd cluster add cluster name --server port
 
 https://kodekloud.com/community/t/deploying-applications-to-kubernetes-by-using-argocd/312405
-
+https://www.webagesolutions.com/blog/deploy-an-application-using-argocd
