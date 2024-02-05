@@ -1,0 +1,39 @@
+eksctl create cluster --name spoke-cluster-1 --region us-west-1
+
+
+kubectl config get-contexts | grep-us-west-1
+
+kubectl config use-contexts name of cluster
+
+kubectl config current-context
+
+goto argo cd doc -- getting started
+
+kubectl get pods -n argocd
+
+kubectl get cm -n argocd
+
+kubectl edit configmap argocd-cmd-params-cm -n argocd
+data:
+server.insecure: "true"
+
+kubectl get pods -n argocd
+
+kubectl get svc -n argocd
+
+kubectl edit svc argocd-server -n argocd (change the cluster ip to NodePort)
+
+kubectl get secrets -n argocd
+
+kubectl describe secret name -n argocd
+
+kubectl edit secret name -n argocd (copy the password)
+
+echo password | base64 --decode
+
+install argocd cli and login 
+
+agrocd cluster add cluster name --server port
+
+https://kodekloud.com/community/t/deploying-applications-to-kubernetes-by-using-argocd/312405
+
