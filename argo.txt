@@ -1,6 +1,5 @@
 eksctl create cluster --name spoke-cluster-1 --region us-west-1
 
-
 kubectl config get-contexts | grep-us-west-1
 
 kubectl config use-contexts name of cluster
@@ -36,4 +35,5 @@ install argocd cli and login
 agrocd cluster add cluster name --server port
 
 https://kodekloud.com/community/t/deploying-applications-to-kubernetes-by-using-argocd/312405
+
 https://www.webagesolutions.com/blog/deploy-an-application-using-argocd
